@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil - Página de Informações</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #006847 0%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #006847 0%, #ffffff 50%, #CE1126 100%);
+            color: 006847;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            color: #006847;
+        }
+
+        .bandeira-container {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .bandeira-container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .bandeira-container p {
+            margin-top: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .secao {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .secao:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #006847;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #CE1126;
+            padding-left: 15px;
+        }
+
+        .info-card {
+            margin-bottom: 10px;
+        }
+
+        .info-card strong {
+            color: #006847;
+        }
+
+        .lista-pontos {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .lista-pontos li {
+            margin-bottom: 8px;
+        }
+
+        .lista-pontos li:hover {
+            color: #CE1126;
+            transition: all 0.3s ease;
+        }
+
+        .ponto-turistico {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .ponto-turistico img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .texto-ponto strong {
+            color: #CE1126;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .texto-ponto p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .ponto-turistico {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .ponto-turistico img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header>
+            <h1>México</h1>
+            <p>Informações gerais sobre o país</p>
+        </header>
+
+        <!-- BANDEIRA -->
+        <div class="bandeira-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/330px-Flag_of_Mexico.svg.png" alt="Bandeira do México">
+            <p>Bandeira oficial do México</p>
+        </div>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+            <!-- CAPITAL -->
+            <section class="secao">
+                <h2>Capital</h2>
+                <div class="info-card">
+                    <strong>Cidade do México</strong> é a capital do México, localizada no Vale do México.
+                </div>
+            </section>
+
+            <!-- IDIOMA -->
+            <section class="secao">
+                <h2>Idioma</h2>
+                <div class="info-card">
+                    <strong>Espanhol</strong> é o idioma oficial do país.
+                </div>
+            </section>
+
+            <!-- MOEDA -->
+            <section class="secao">
+                <h2>Moeda</h2>
+                <div class="info-card">
+                    <strong>Peso Mexicano (MXN)</strong> é a moeda oficial do México desde 1993.
+                </div>
+            </section>
+
+            <!-- POPULAÇÃO -->
+            <section class="secao">
+                <h2>População</h2>
+                <div class="info-card">
+                    <strong>Aproximadamente 130 milhões de habitantes</strong>, sendo um dos países mais populosos da América Latina.
+                </div>
+            </section>
+
+            <!-- PONTOS TURÍSTICOS -->
+            <section class="secao">
+                <h2>Pontos Turísticos</h2>
+                <div class="ponto-turistico">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Chichen_Itza_3.jpg" alt="Templo de Kukulcan">
+                    <div class="texto-ponto">
+                        <strong>Chichén Itzá</strong>
+                        <p>Uma das Sete Maravilhas do Mundo Moderno</p>
+                    </div>
+                </div>
+
+                <div class="ponto-turistico">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cancun_Strand_Luftbild_%2822143397586%29.jpg/1280px-Cancun_Strand_Luftbild_%2822143397586%29.jpg" alt="Cancún">
+                    <div class="texto-ponto">
+                        <strong>Cancún</strong>
+                        <p>Uma das prais mais visitadas do mundo.</p>
+                    </div>
+                </div>
+
+                <div class="ponto-turistico">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Piramide_de_la_Luna_072006.jpg" alt="teotihuacán">
+                    <div class="texto-ponto">
+                        <strong>Teotihuacán</strong>
+                        <p>Uma das cidades mais importantes da Mesoamérica</p>
+                    </div>
+                </div>
+
+                <div class="ponto-turistico">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Catedral_Metropolitana_de_la_Ciudad_de_M%C3%A9xico_1.jpg/1280px-Catedral_Metropolitana_de_la_Ciudad_de_M%C3%A9xico_1.jpg" alt="Catedral">
+                    <div class="texto-ponto">
+                        <strong>Catedral Metropolitana da Cidade do México</strong>
+                        <p>Uma das maiores catedrais da América</p>
+                    </div>
+                </div>
+
+                <div class="ponto-turistico">
+                    <img src="https://www.dicasdeviagem.com/wp-content/uploads/2020/04/radek-tulum-unsplash-scaled.jpg" alt="Tulum">
+                    <div class="texto-ponto">
+                        <strong>Tulum</strong>
+                        <p>Foi uma cidade construida e habitada pelos Maias.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CURIOSIDADES -->
+            <section class="secao">
+                <h2>Curiosidades</h2>
+                <ul class="lista-pontos">
+                    <li>O México é o país de origem do chocolate, cultivado pelos povos maias e astecas.</li>
+                    <li>Possui mais de 30 locais reconhecidos como Patrimônio Mundial pela UNESCO.</li>
+                    <li>A comemoração do Dia dos Mortos é uma das tradições mais famosas do país.</li>
+                    <li>O México abriga a maior pirâmide em volume do mundo: a Grande Pirâmide de Cholula.</li>
+                    <li>É um dos maiores produtores de abacate do planeta.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <p>&copy; 2026 - Página informativa sobre o México. Trabalho escolar.</p>
+        </footer>
+    </div>
+</body>
+</html>
